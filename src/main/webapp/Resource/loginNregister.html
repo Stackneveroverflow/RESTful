@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户中心</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/reg.css">
+    <style>
+        input::-webkit-input-placeholder {
+            /* placeholder颜色  */
+            color: #aab2bd;
+            /* placeholder字体大小  */
+            font-size: 12px;
+            /* placeholder位置  */
+            text-align: left;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/json2.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
+</head>
+<body>
+<div id="ajax-hook"></div>
+<div class="wrap">
+    <div class="wpn">
+        <div class="form-data pos">
+            <a href="/home.jsp"><img src="./img/logo.png" class="head-logo"></a>
+            <div class="change-login">
+                <p class="account_number on">账号登录</p>
+                <p class="signup">账号注册</p>
+            </div>
+            <div class="form1">
+                <p class="p-input pos">
+                    <input type="text" id="num" placeholder="账号">
+                </p>
+                <p class="p-input pos">
+                    <input type="password" id="pass" autocomplete="new-password" placeholder="请输入密码">
+                </p>
+                <button class="lang-btn off log-btn">登录</button>
+                <div><p id='info2' style="color:red;font-size:12px;float: end;text-align: center"></p></div>
+            </div>
+            <div class="form2 hide">
+                <p class="p-input pos">
+                    <input type="text" id="account" placeholder="请输入账号(字母开头,只能由数字字母组成,6-16个字符)" autocomplete="off">
+                </p>
+                <p class="p-input pos" id="pwd">
+                    <input type="password" id="passport" placeholder="请输入密码(6-16位)">
+                </p>
+                <p class="p-input pos" id="confirmpwd">
+                    <input type="password" id="passport2" placeholder="请再次输入密码">
+                </p>
+                <button class="lang-btn off reg-btn">注册</button>
+                <div><p id='info1' style="color:red;font-size:12px;float: end;text-align: center"></p></div>
+            </div>
+            <p class="right">Powered by Macer</p>
+        </div>
+    </div>
+</div>
+<script src="js/loginNregister.js"></script>
+</body>
+</html>

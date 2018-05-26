@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+          name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="IE=9; IE=8; IE=7; IE=EDGE" http-equiv="X-UA-Compatible">
+    <title>Sweetyhut</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/new.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollUp.js"></script>
+    <!-- jQuery UI JS -->
+    <script src="js/jquery-ui-v1.10.3.js"></script>
+    <!-- Custom JS -->
+    <script src="js/menu.js"></script>
+    <script type="text/javascript" src="js/jquery.layer.js"></script>
+    <link rel="stylesheet" href="js/skin/layer.css">
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
+    <script src="js/beau.js"></script>
+</head>
+
+<body>
+<header>
+    <a href="#" class="logo">
+        <img src="img/logo.png" alt="Sweetyhut">
+    </a>
+    <div class="pull-right">
+        <ul id="mini-nav" class="clearfix">
+            <li class="list-box">
+                <a href="#">
+                    <i class="fa fa-user text-warning"></i> <span class="text-white">userName</span>
+                </a>
+            </li>
+            <li class="list-box hidden-xs">
+                <a href="#" title="比特币">
+                    <i class="fa">Bitcoin</i> <span class="badge warning-bg">0.00</span>
+                </a>
+            </li>
+            <li class="list-box hidden-xs">
+                <a href="#" title="个人积分">
+                    <i class="fa">积分</i> <span class="badge facebook-bg">0</span>
+                </a>
+            </li>
+            <li class="list-box hidden-xs">
+                <a href="#" title="挂售中">
+                    <i class="fa">挂售中</i> <span class="badge success-bg">0.00 B</span>
+                </a>
+            </li>
+            <li class="list-box">
+                <a href="#">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <span class="info-label danger-bg">0</span>
+            </li>
+            <li class="list-box user-profile">
+                <a id="drop7" role="button" class="dropdown-toggle user-avtar" data-toggle="dropdown">
+                    <img src="img/user5.png" alt="userName">
+                </a>
+                <ul class="dropdown-menu server-activity">
+                    <li>
+                        <p class="center-align-text" onclick="window.location.replace('loginNregister.html');">欢迎您, <b>userName</b>
+                            !</p>
+                    </li>
+                    <li>
+                        <p><i class="fa fa-rmb text-info"></i><span>我的钱包</span></p>
+                    </li>
+                    <li>
+                        <p><i class="fa fa-cog text-info"></i><span>资料修改</span></p>
+                    </li>
+                    <li>
+                        <p><i class="fa fa-lock text-info"></i><span>修改密码</span></p>
+                    </li>
+                    <li>
+                        <div class="demo-btn-group clearfix">
+                            <button class="btn btn-danger">
+                                安全退出
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<!-- Main Container start -->
+<div class="dashboard-container">
+
+    <div class="container">
+        <!-- Top Nav Start -->
+        <div id="cssmenu">
+            <div id="menu-button">Menu</div>
+            <ul>
+                <li class="active has-sub"><span class="submenu-button"></span>
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-home"></i>
+                        比特币交易
+                    </a>
+                    <ul>
+                        <li><a href="#">交易大厅</a></li>
+                        <li><a href="#">购买</a></li>
+                        <li><a href="#">挂售</a></li>
+                        <li><a href="#">购买记录</a></li>
+                        <li><a href="#">挂售记录</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <i class="fa fa-bullhorn"></i>
+                        系统公告
+                    </a>
+                </li>
+                <li class="has-sub"><span class="submenu-button"></span>
+                    <a href="javascript:void(0);"><i class="fa fa-users"></i>账号管理</a>
+                    <ul>
+                        <li><a href="#">个人档案</a></li>
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="#">账号升级</a></li>
+                        <li><a href="#">子账户</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub"><span class="submenu-button"></span>
+                    <a href="javascript:void(0);"><i class="fa fa-sitemap"></i>业务管理</a>
+                    <ul>
+                        <li><a href="#">注册会员</a></li>
+                        <li><a href="#">直推图</a></li>
+                        <li><a href="#">系谱图</a></li>
+                        <li><a href="#">团队管理</a></li>
+                        <li><a href="#">激活记录</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub"><span class="submenu-button"></span>
+                    <a href="javascript:void(0);"><i class="fa fa-bar-chart-o"></i>财务管理</a>
+                    <ul>
+                        <li><a href="#">我的钱包</a></li>
+                        <li><a href="#">积分明细</a></li>
+                        <li><a href="#">帐变明细</a></li>
+                        <li><a href="#">账户充值</a></li>
+                        <li><a href="#">积分转账</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub"><span class="submenu-button"></span>
+                    <a href="javascript:void(0);"><i class="fa fa-comments"></i>联系我们</a>
+                    <ul>
+                        <li><a href="#">留言反馈</a></li>
+                        <li><a href="#">我的消息</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sign-out"></i>
+                        安全退出
+                    </a>
+                </li>
+            </ul>
+        </div>    <!-- Top Nav End -->
+        <div class="sub-nav hidden-sm hidden-xs">
+            <ul>
+                <li><a href="#" class="heading">比特币交易</a></li>
+                <li class="hidden-sm hidden-xs">
+                    <a href="#" class="selected">交易大厅</a>
+                </li>
+                <li class="hidden-sm hidden-xs">
+                    <a href="#" class="">购买</a>
+                </li>
+                <li class="hidden-sm hidden-xs">
+                    <a href="#" class="">挂售</a>
+                </li>
+                <li class="hidden-sm hidden-xs">
+                    <a href="#" class="">购买记录</a>
+                </li>
+                <li class="hidden-sm hidden-xs">
+                    <a href="#" class="">挂售记录</a>
+                </li>
+            </ul>
+            <div class="custom-search hidden-sm hidden-xs">
+                <a href="#">Home</a> &gt; <a>比特币交易</a>
+            </div>
+        </div>
+        <!-- Sub Nav End -->
+        <div class="dashboard-wrapper">
+            <div class="row">
+                <div class="col-sm-12" id="pd_panel">
+                    <div class="metro-nav">
+                        <div class="metro-nav-block nav-block-orange"><a href="#" title="购买" onclick="ShowAddForm(0)">
+                            <i class="fa fa-shopping-cart" title=""></i>
+                            <div class="info">我要购买比特币</div>
+                            <div class="brand">购买</div>
+                        </a></div>
+                        <div class="metro-nav-block nav-block-blue"><a href="#" title="挂售" onclick="ShowAddForm(1)">
+                            <i class="fa fa-usd"></i>
+                            <div class="info">我要出售比特币</div>
+                            <div class="brand">挂售</div>
+                        </a></div>
+                        <div class="metro-nav-block nav-block-yellow double"><a href="#"> <i class="fa fa-btc"></i>
+                            <div class="info">Bitcoin：0.00</div>
+                            <div class="brand">我的资产</div>
+                        </a></div>
+                    </div>
+                </div>
+                <form class="form-horizontal" method="post">
+                    <div class="col-sm-12">
+                        <div id="pd_add_form" class="panel panel-default" style="display: none;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">购买EP</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="PDAmount">购买数额</label>
+                                    <div class="col-sm-5">
+                                        <input class="form-control" type="text" value="">
+                                    </div>
+                                    <div class="col-sm-5 col-msg"><span class="field-validation-valid"></span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="PDPayPassword">安全密码</label>
+                                    <div class="col-sm-5">
+                                        <input class="form-control" type="password">
+                                    </div>
+                                    <div class="col-sm-5 col-msg"><span class="field-validation-valid"></span></div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-6">
+                                        <button type="submit" class="btn btn-info" id="buy_submit">确定购买</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="form-horizontal">
+                    <div class="col-sm-12">
+                        <div id="gd_add_form" class="panel panel-default" style="display: none;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">挂售EP</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="GDAmount">挂售数额：</label>
+                                    <div class="col-sm-5">
+                                        <input class="form-control" type="text" value="">
+                                    </div>
+                                    <div class="col-sm-5 col-msg"><span class="field-validation-valid"></span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">收款方式：</label>
+                                    <div class="col-sm-6"><label><input type="checkbox" value="1" checked="checked">银行汇款</label>
+                                        <label><input type="checkbox" value="2">支付宝</label> <label><input
+                                                type="checkbox" name="pay_method[]" value="3">微信</label> <label><input
+                                                type="checkbox" value="4">财付通</label></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label" for="GDPayPassword">安全密码：</label>
+                                    <div class="col-sm-5">
+                                        <input class="form-control" type="password">
+                                    </div>
+                                    <div class="col-sm-5 col-msg"><span class="field-validation-valid"></span></div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-6">
+                                        <button type="submit" class="btn btn-info" id="sell_submit">确定挂售</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

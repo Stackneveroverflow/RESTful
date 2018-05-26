@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:p="http://www.springframework.org/schema/p"
        xmlns:context="http://www.springframework.org/schema/context"
@@ -10,12 +9,11 @@
 			            http://www.springframework.org/schema/context
 			            http://www.springframework.org/schema/context/spring-context.xsd
 			            http://www.springframework.org/schema/tx
-			            http://www.springframework.org/schema/tx/spring-tx.xsd
-			            http://mybatis.org/schema/mybatis-spring
-			            http://mybatis.org/schema/mybatis-spring.xsd ">
-    <!-- mybatis:scan会扫描dao包里的所有接口当作Spring的bean配置，之后可以进行依赖注入-->
-    <mybatis:scan base-package="cn.sweetyhut.hrm.dao"/>
-
+			            http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage"
+                  value="cn.sweetyhut.user.dao"/>
+    </bean>
     <!-- 扫描java文件，有Spring的相关注解的类，则把这些类注册为Spring的bean -->
     <context:component-scan base-package="cn.sweetyhut.user"/>
 

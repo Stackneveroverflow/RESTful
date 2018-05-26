@@ -20,6 +20,11 @@
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>LATEST</version>
+    </dependency>
     <!--junit单元测试-->
     <dependency>
       <groupId>junit</groupId>
@@ -37,6 +42,11 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
+      <version>LATEST</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-access</artifactId>
       <version>LATEST</version>
     </dependency>
     <!--javax-servlet API-->

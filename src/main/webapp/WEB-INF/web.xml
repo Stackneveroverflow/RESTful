@@ -4,11 +4,19 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          id="WebApp_ID" version="3.1">
+    <welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <location>/WEB-INF/content/404.jsp</location>
+    </error-page>
+    <!--
     <listener>
         <listener-class>
             org.springframework.web.context.request.RequestContextListener
         </listener-class>
     </listener>
+    -->
 
     <!-- 利用Spring提供的ContextLoaderListener监听器去监听ServletContext对象的创建，并初始化WebApplicationContext对象 -->
     <listener>
