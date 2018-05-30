@@ -1,6 +1,5 @@
 RESTful API初试
 ==========
----
 ### 后端
 控制器使用@RestController注解声明，隐式默认为每个方法加上@ResponseBody注解,返回的数据不再被视图解析器解析
 ```Java
