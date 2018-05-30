@@ -117,4 +117,5 @@ $.ajax(
 ---
 ### 增强
 * CORS
+
 全称是”跨域资源共享”（Cross-origin resource sharing）服务端只需添加相关响应头信息，即可实现客户端发出AJAX跨域请求。
